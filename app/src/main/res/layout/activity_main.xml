@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPIN"
+            android:onClick="onSpin"/>
+
+        <Button
+            android:id="@+id/grow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GROW"
+            android:onClick="onGrow"/>
+        <Button
+            android:id="@+id/teleport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TELEPORT"
+            android:onClick="onTeleport"/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:onClick="onReset"
+           />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/drag1"></ImageView>
+
+
+</android.widget.RelativeLayout>
